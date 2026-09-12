@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de usuarios</title>
+    <link
+        rel="stylesheet"
+        href="{% static 'css/estilos.css' %}"
+    >
+</head>
+<body>
+    <header>
+
+        <div class="titulo-header">
+
+            <img
+                src="{% static 'images/usuario.png' %}"
+                alt="Icono de usuario"
+                class="icono-header"
+            >
+
+            <h1>Sistemas de Usuarios</h1>
+
+            <img
+                src="{% static 'images/candado.png' %}"
+                alt="Icono de candado"
+                class="icono-header"
+            >
+
+        </div>
+
+    </header>
+    <main>
+        {% block contenido %}
+
+        {% endblock %}
+    </main>
+    <footer>
+        <p>Evaluación I Programación Back-End - Vanessa Bozzo - INACAP 2026 </p>
+    </footer>    
+    <script
+        type="text/javascript"
+        src="{% static 'js/registro.js' %}">
+    </script>
+
+    <script
+        type="text/javascript"
+        src="{% static 'js/login.js' %}">
+    </script>
+</body>
+</html>  

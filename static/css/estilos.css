@@ -1,0 +1,324 @@
+/* ========================================
+   ESTILOS GENERALES
+   ======================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F9EAC1;
+    color: #263238;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/fondo_login.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+    transform: scale(1.03);
+    opacity: 0.55;
+    z-index: 0;
+}
+
+header,
+main,
+footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* ========================================
+   ENCABEZADO
+   ======================================== */
+
+header {
+    background-color: #80B0AA;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.titulo-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+.icono-header {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+
+/* ========================================
+   CONTENIDO PRINCIPAL
+   ======================================== */
+
+main {
+    width: 90%;
+    max-width: 520px;
+
+    margin: 40px auto;
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   TÍTULOS
+   ======================================== */
+
+h2 {
+    color: #80B0AA;
+    margin-top: 0;
+}
+
+
+h3 {
+    margin-top: 0;
+}
+
+
+/* ========================================
+   FORMULARIOS
+   ======================================== */
+
+form {
+    width: 100%;
+}
+
+
+form div {
+    margin-bottom: 15px;
+}
+
+
+/* ========================================
+   ETIQUETAS
+   ======================================== */
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+/* ========================================
+   INPUTS
+   ======================================== */
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #80B0AA;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: white;
+}
+
+
+/* Cuando el usuario hace clic dentro de un input */
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+
+    outline: none;
+    border-color: #FDB3CA;
+    box-shadow: 0 0 0 3px #FDD4E3;
+}
+
+
+/* ========================================
+   CHECKBOX MOSTRAR CONTRASEÑA
+   ======================================== */
+
+input[type="checkbox"] {
+    margin-right: 6px;
+    accent-color: #80B0AA;
+}
+
+
+/* Mantiene el texto al lado del checkbox */
+
+input[type="checkbox"] + label {
+    display: inline;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+
+/* ========================================
+   REQUISITOS DE CONTRASEÑA
+   ======================================== */
+
+form ul {
+    background-color: #C8EDED;
+    padding: 12px 12px 12px 35px;
+    border-radius: 8px;
+}
+
+
+/* ========================================
+   BOTONES
+   ======================================== */
+
+button {
+
+    background-color: #80B0AA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+
+/* Cuando el mouse pasa sobre el botón */
+
+button:hover {
+
+    background-color: #FDB3CA;
+    color: #263238;
+}
+
+.enlace-navegacion {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* ========================================
+   MENSAJES DE ERROR
+   ======================================== */
+
+.mensaje-error {
+
+    background-color: #FDD4E3;
+    border-left: 6px solid #FDB3CA;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+
+.mensaje-error h3 {
+
+    color: #263238;
+}
+
+
+.mensaje-error ul {
+
+    margin-bottom: 10px;
+}
+
+
+/* ========================================
+   MENSAJES DE ÉXITO
+   ======================================== */
+
+.mensaje-exito {
+
+    background-color: #C8EDED;
+    border-left: 6px solid #80B0AA;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+
+/* ========================================
+   ENLACES
+   ======================================== */
+
+a {
+
+    color: #80B0AA;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+a:hover {
+
+    color: #FDB3CA;
+    text-decoration: underline;
+}
+
+
+.acciones-navegacion {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.acciones-navegacion a {
+    color: #80B0AA;
+    font-weight: bold;
+    text-decoration: none;
+    background: none;
+    padding: 0;
+}
+
+
+.acciones-navegacion a:hover {
+    color: #FDB3CA;
+    text-decoration: underline;
+    background: none;
+}
+
+
+.acciones-navegacion span {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #263238;
+}
+
+
+/* ========================================
+   PIE DE PÁGINA
+   ======================================== */
+
+footer {
+
+    background-color: #FDD4E3;
+    color: #263238;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}
