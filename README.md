@@ -1,4 +1,3 @@
-
 # EVA1 - Programación Back-End | Django
 
 Proyecto desarrollado para la **Evaluación 1 de Programación Back-End**, correspondiente a la carrera de **Analista Programador en INACAP**.
